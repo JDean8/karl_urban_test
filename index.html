@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Urban</title>
+    <link rel="stylesheet" href="./syles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="main-body" data-bs-theme="dark">
+    <nav>
+        <a href="#bio"><i class="fa-solid fa-user"></i> Bio</a>
+        <a href="#notable-roles"><i class="fa-solid fa-video"></i> Notable Roles</a>
+        <a target="_blank" href="https://www.imdb.com/name/nm0881631/bio/?ref_=nm_ov_bio_sm"><i class="fa-brands fa-imdb"></i> IMDB</a>
+        <button type="button" onclick="fun()"><i class="fa-solid fa-cloud-moon"></i></button>
+    </nav>
+    <div id="bio">
+        <div class="row">
+            <img class="headshot col-lg-6" src="./images/karl_urban_5b.webp">
+            <div class="col-lg-6 flex">
+                <h1>Karl Urban</h1>
+                <p>Karl Urban was born on June 7, 1972, in Wellington, New Zealand. He began his acting career in his home country and gained recognition for his performances in various local film and television projects before expanding his reach to international audiences.</p>
+                <p>One of Karl Urban's standout qualities as an actor is his versatility. He has demonstrated his ability to take on a wide array of roles across different genres, showcasing his acting skills and adaptability. This versatility has allowed him to successfully transition between roles that range from intense action characters to more nuanced and dramatic roles.</p>
+            </div>
+    </div>
+    <div id="notable-roles" class="container">
+        <div class="row">
+            <div class="col-lg-4 flex">
+                <h2>Eomer</h2>
+                <img src="./images/Eomer.webp" alt="Eomer witht the riders of rohan"/>
+                <p>Éomer is the nephew of King Théoden and serves as the Third Marshal of the Riddermark. In the movies, he is portrayed as brave, loyal, and a key ally to the main characters in their fight against the forces of darkness. He plays a significant role in the Battle of Helm's Deep and other pivotal moments in the story.</p>
+            </div>
+            <div class="col-lg-4 flex">
+                <h2>Bones</h2>
+                <img src="./images/bones.webp" alt="Eomer witht the riders of rohan"/>
+                <p>Karl Urban played the character Dr. Leonard "Bones" McCoy in the 2009 Star Trek film directed by J.J. Abrams. McCoy is the chief medical officer of the USS Enterprise, a starship exploring space in the 23rd century. He's known for his gruff but compassionate personality, as well as his deep friendship with Captain James T. Kirk.</p>
+            </div>
+            <div class="col-lg-4 flex">
+                <h2>Billy Butcher</h2>
+                <img src="./images/billy_butcher.jpeg" alt="Eomer witht the riders of rohan"/>
+                <p>Billy Butcher is the tough and relentless leader of a vigilante group that opposes corrupt and superpowered individuals. Butcher is driven by a burning desire for revenge against superhumans whom he blames for personal tragedy. He's known for his rough demeanor, resourcefulness, and unyielding determination.</p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        function fun(){
+            console.log("test")
+            let mode = "dark"
+            if (document.querySelector('body').getAttribute('data-bs-theme') === "dark"){
+                mode ="light"
+            }
+            document.querySelector('body').setAttribute('data-bs-theme', mode)
+        }
+    </script>
+</html>
